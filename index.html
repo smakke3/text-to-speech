@@ -39,6 +39,7 @@
     
     <h1 class="mdc-typography--display1">Hello, World!</h1>
     
+    <input type="text" name="phrase" id="phrase"><br>
     
     <button type="button" class="mdc-button mdc-button--raised">
       Stop playing LightBot!
@@ -105,10 +106,12 @@
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function() {
+         $("button.standard").on("click", function() {
            sayIt($(this).text());
          });
-        
+        $("button.standard").on("click", function() {
+           sayIt($(this).text());
+         });
 
 
 
